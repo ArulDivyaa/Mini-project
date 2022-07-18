@@ -1,0 +1,16 @@
+USE school;
+DROP TABLE IF EXISTS shopproducts ;
+ CREATE TABLE  shopproducts (
+	id int not null,
+	prod_name varchar(200) NOT NULL,
+	description text NOT NULL,
+	price int NOT NULL,
+	qty int NOT NULL,
+    img text NOT NULL,
+	PRIMARY KEY (id)
+);
+
+INSERT INTO shopproducts VALUES(1, "Smart Watch", "can see time", 5000, 10, "watch.jpg");
+INSERT INTO shopproducts VALUES(2, 'Wallet', 'can save money', 1000, 34, 'wallet.jpg');
+insert INTO shopproducts VALUES(3, 'Headphones', 'can hear songs', 10000, 23, 'headphones.jpg' );
+INSERT INTO shopproducts VALUES(4, 'Digital Camera', 'can take photos', 25000,7, 'camera.jpg');
